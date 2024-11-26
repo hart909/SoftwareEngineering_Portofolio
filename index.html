@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portofolio Aldo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+    />
+  </head>
+  <body>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="#0">
+        <div class="logo">
+          <img
+            src="assets/img/logo.png"
+            alt="Portofolio"
+            width="100"
+            height="auto"
+          />
+        </div>
+        <p></p>
+      </a>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header">
+              <a class="header--logo" href="#0">
+                <div class="logo">
+                  <img
+                    src="assets/img/logo.png"
+                    alt="Portofolio"
+                    width="100"
+                    height="auto"
+                  />
+                </div>
+              </a>
+
+              <div class="header--nav-toggle">
+                <span></span>
+              </div>
+            </header>
+            <nav class="l-side-nav">
+              <ul class="side-nav">
+                <li class="is-active"><span>Home</span></li>
+                <li><span>Relevant Projects & Certification</span></li>
+                <li><span>Skills</span></li>
+                <li><span>Experience</span></li>
+                <li><span>Contact</span></li>
+              </ul>
+            </nav>
+            <ul class="l-main-content main-content">
+              
+              <li class="l-section section section--is-active">
+                <div class="solar-system">
+                <div class="sun">
+                  <img src="/assets/img/sun.png" alt="sun">
+                </div>
+                <div class="mercury"></div>
+                <div class="venus"></div>
+                <div class="earth">
+                  <div class="moon"></div>
+                </div>
+                <div class="mars"></div>
+                <div class="jupiter"></div>
+                <div class="saturn"></div>
+                <div class="uranus"></div>
+                <div class="neptune"></div>
+                <div class="pluto">
+                </div>
+                </div>
+                <div class="intro">
+                  <div class="intro--banner">
+                    <h1><br />Aldo Hartanto Dewantoro<br /></h1>
+                    <div class="button-container">
+                      <a
+                        href="https://www.linkedin.com/in/aldo-hartanto-dewantoro-8a2146256/"
+                        target="_blank"
+                        class="btn linkedin"
+                      >
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                      </a>
+                      <a
+                        href="https://github.com/hart909/"
+                        target="_blank"
+                        class="btn github"
+                      >
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
+                    </div>
+
+                    <img
+                      src="assets/img/introduction-visual.png"
+                      width="400,"
+                      height="auto,"
+                      alt="Welcome"
+                    />
+                  </div>
+                  <div class="intro--options">
+                    <a href="#0">
+                      <h3>Student</h3>
+                      <p>
+                        Undergraduate student in my fifth semester at
+                        Universitas Tarumanagara, majoring in Informatics
+                        Engineering.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>My Interest</h3>
+                      <p>
+                        I am deeply passionate about
+                        <strong>Data Science</strong> and
+                        <strong>Machine Learning</strong>. I enjoy exploring
+                        algorithms, uncovering insights from data, and building
+                        predictive models to solve real-world problems.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>Personal Statement</h3>
+                      <p>
+                        I am a hardworking individual who consistently gives
+                        100% to every task assigned to me. My dedication to
+                        continuous improvement and ability to adapt to
+                        challenges make me a reliable and driven professional.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="l-section section">
+                <div class="carousel-wrapper">
+                  <h1 class="carousel-title">Relevant Projects</h1>
+
+                  <div class="carousel-main">
+                    <button class="carousel-button carousel-prev">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    <div class="carousel-track">
+                      <div class="carousel-item" data-id="1">
+                        <div class="carousel-image-wrapper">
+                          <img
+                            src="assets/img/work-1.jpg"
+                            alt="Kudus"
+                            class="carousel-image"
+                          />
+                        </div>
+                        <h3 class="carousel-item-title">Kudus Heritage</h3>
+                        <p class="carousel-item-description">
+                          Analysis on five main commodities which is fresh
+                          chicken meat, chicken eggs, shallots, garlic, and
+                          bird's eye chili to identify the most stable trends
+                          and the commodities with the most extreme fluctuations
+                          using Python.
+                        </p>
+                      </div>
+
+                      <div class="carousel-item active" data-id="2">
+                        <div class="carousel-image-wrapper">
+                          <img
+                            src="assets/img/work-2.jpg"
+                            alt="Glass Product"
+                            class="carousel-image"
+                          />
+                        </div>
+                        <h3 class="carousel-item-title">
+                          Predict <br />Glass Product<br />
+                          Quality
+                        </h3>
+                        <p class="carousel-item-description">
+                          Analysis and Prediction of Glass Product Quality Using
+                          Polynomial Regression Algorithm in MATLAB
+                        </p>
+                      </div>
+
+                      <div class="carousel-item" data-id="3">
+                        <div class="carousel-image-wrapper">
+                          <img
+                            src="assets/img/work-3.jpg"
+                            alt="House Price"
+                            class="carousel-image"
+                          />
+                        </div>
+                        <h3 class="carousel-item-title">
+                          Estimated<br />
+                          US House Price
+                        </h3>
+                        <p class="carousel-item-description">
+                          Performing Analysis, Building a Predictive Model with
+                          Scikit-learn using Python and Integrating It into a
+                          Website Using Flask
+                        </p>
+                      </div>
+                    </div>
+
+                    <button class="carousel-button carousel-next">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cert-grid">
+                    <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1P5XZztNkNud_kAnp_-CbUi_LXaCA8WFR/view?usp=drive_link', '_blank')">
+                      <div class="cert-header">
+                        <img
+                          src="https://img.icons8.com/?size=100&id=oOaQa2nsHmDV&format=png&color=000000"
+                          class="cert-icon"
+                          alt="Huawei"
+                        />
+                        <span class="cert-name">Huawei AI Certification</span>
+                      </div>
+                      <div class="tooltip">Click to view certification details</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+
+              <li class="l-section section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        class="skill-icon"
+                        alt="Python"
+                      />
+                      <span class="skill-name">Python</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar advanced"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Advanced: Skilled in advanced Python programming for data
+                      analysis, automation, and application development.
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://img.icons8.com/?size=100&id=UECmBSgBOvPT&format=png&color=000000"
+                        class="skill-icon"
+                        alt="Scikit-learn"
+                      />
+                      <span class="skill-name">Excel or Spreadsheet</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar advanced"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Advanced: Proficient in leveraging advanced Excel
+                      functions for data manipulation, analysis, and reporting.
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        class="skill-icon"
+                        alt="SQL"
+                      />
+                      <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar intermediate"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Intermediate: Capable of writing complex queries for data
+                      extraction, transformation, and database management
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000"
+                        class="skill-icon"
+                        alt="Power BI"
+                      />
+                      <span class="skill-name">Power BI</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar intermediate"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Intermediate: Experienced in creating interactive
+                      dashboards and visualizations for data-driven insights
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://img.icons8.com/?size=100&id=hCWb1IvpcBZ0&format=png&color=000000"
+                        class="skill-icon"
+                        alt="Flask"
+                      />
+                      <span class="skill-name">Flask</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar intermediate"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Intermediate: Experienced in developing and deploying web
+                      applications using Flask framework.
+                    </div>
+                  </div>
+
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <img
+                        src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
+                        class="skill-icon"
+                        alt="AWS"
+                      />
+                      <span class="skill-name">AWS</span>
+                    </div>
+                    <div class="progress-container">
+                      <div
+                        class="progress-bar familiar"
+                        style="width: 30%"
+                      ></div>
+                    </div>
+                    <div class="tooltip">
+                      Familiar: Understanding the basic AWS services and
+                      configurations for cloud-based solution
+                    </div>
+                  </div>
+                </div>
+
+    
+              </li>
+              <li class="l-section section">
+                <section class="timeline">
+                  <h1 class="timeline-title">Experience </h1>
+                  <div class="timeline-container">
+                      <div class="timeline-item">
+                          <div class="timeline-line"></div>
+                          <div class="timeline-content">
+                              <h2>DPM FTI Untar (2024 - Present)</h2>
+                              <p><strong>Role:</strong> Public Relations Member</p>
+                              <ul>
+                                  <li>Created and edited 3-5 video contents for Instagram per semester.</li>
+                                  <li>Designed 3-4 posts for national or religious holiday events on Instagram.</li>
+                                  <li>Managed collaborations with 5-8 organizations within Tarumanagara University.</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="timeline-item">
+                          <div class="timeline-line"></div>
+                          <div class="timeline-content">
+                              <h2>Science Club (2019-2021)</h2>
+                              <p><strong>Informatics Division Member</strong></p>
+                              <ul>
+                                  <li>2019: Ranked Top 10 in National Science Competition (KSN) for Informatics at Jakarta Pusat District Level.</li>
+                                  <li>2021: Classroom Assistant Teaching C++ Programming for 10-15 Students.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              </li>
+
+              <li class="l-section section">
+                <div class="vignette"></div>
+
+                <!-- Map Controls -->
+                <div class="map-controls">
+                  <button class="map-button" onclick="zoomIn()">Zoom In</button>
+                  <button class="map-button" onclick="zoomOut()">
+                    Zoom Out
+                  </button>
+                  <button class="map-button" onclick="centerMap()">
+                    Center
+                  </button>
+                </div>
+
+                <!-- Interactive Map -->
+                <div id="map"></div>
+
+                <!-- Contact section -->
+                <section class="contact-section">
+                  <div class="contact-card">
+                    <h2 class="contact-title">Contact Me</h2>
+                    <div class="contact-links">
+                      <a
+                      href="mailto:aldohartanto06@gmail.com?subject=Subject%20Here&body=Your%20message%20here"
+                      class="contact-link"
+                    >
+                      <svg
+                        class="contact-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>Email Me</span>
+                    </a>
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/aldo-hartanto-dewantoro-8a2146256"
+                        target="_blank"
+                        class="contact-link"
+                      >
+                        <svg
+                          class="contact-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6 9H2V21H6V9Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>LinkedIn Profile</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="outer-nav">
+        <li class="is-active">Home</li>
+        <li>Relevant Projects & Certification</li>
+        <li>Skills</li>
+        <li>Experience</li>
+        <li>Contact</li>
+      </ul>
+      <div class="stars"></div>
+      <div class="cursor-light"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
+        );
+    </script>
+    <script src="assets/js/functions-min.js"></script>
+  </body>
+</html>
