@@ -307,7 +307,10 @@ body {
     -webkit-overflow-scrolling: touch; /* Scrolling native di iOS */
     overscroll-behavior-y: none; 
 }
-
+.scrollable {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
 
 
 .device-notification {
@@ -1686,6 +1689,8 @@ body {
 }
 
 .cert-card {
+  position:relative;
+  top: -10px;
   width: 100%; 
   height:60%;
   max-width: 300px; 
@@ -1916,7 +1921,7 @@ body {
   visibility: visible;
 }
 
-/* Media Queries */
+/* Média queries */
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
@@ -2185,17 +2190,17 @@ body {
 
 /**/
 .timeline {
-  padding: 30px 10px;
-  max-width: 100%;
+  padding: 40px 20px;
+  max-width: 900px;
   margin: auto;
   position: relative;
 }
 
 .timeline-title {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #f5f5f5;
 }
 
@@ -2205,7 +2210,7 @@ body {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: flex;
   align-items: flex-start;
 }
@@ -2222,37 +2227,36 @@ body {
 }
 
 .timeline-content {
-  padding: 15px;
+  padding: 20px;
   background: #1f1f1f;
-  border-radius: 8px;
-  margin-left: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 
 .timeline-content h2 {
-  margin: 0 0 8px;
-  font-size: 1.3em;
+  margin: 0 0 10px;
+  font-size: 1.5em;
   font-weight: 600;
   color: #f5f5f5;
 }
 
 .timeline-content p {
-  font-size: 0.9em;
-  margin: 4px 0;
+  font-size: 1em;
+  margin: 5px 0;
   color: #d3d3d3;
 }
 
 .timeline-content ul {
-  margin: 8px 0 0;
-  padding-left: 18px;
+  margin: 10px 0 0;
+  padding-left: 20px;
   list-style: disc;
   color: #d3d3d3;
-  font-size: 0.9em;
 }
 
 .timeline-item:hover .timeline-content {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @keyframes grow-line {
@@ -2264,30 +2268,45 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .timeline {
-      padding: 20px 5px;
+    padding: 25px 10px;
   }
 
   .timeline-title {
-      font-size: 1.6em;
-      margin-bottom: 15px;
+    font-size: 1.7em;
+    margin-bottom: 20px;
   }
 
   .timeline-content {
-      margin-left: 15px;
-      padding: 12px;
-      border-radius: 6px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding: 20px 5px;
+  }
+
+  .timeline-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .timeline-content {
+    margin-left: 15px;
+    padding: 12px;
+    border-radius: 6px;
   }
 
   .timeline-content h2 {
-      font-size: 1.2em;
-      margin-bottom: 6px;
+    font-size: 1.2em;
+    margin-bottom: 6px;
   }
 
   .timeline-content p,
   .timeline-content ul {
-      font-size: 0.8em;
+    font-size: 0.8em;
   }
 }
 
