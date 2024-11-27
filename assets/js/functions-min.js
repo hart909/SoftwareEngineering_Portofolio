@@ -188,41 +188,4 @@ window.addEventListener('resize', function() {
      });
  });
 
- document.addEventListener("DOMContentLoaded", () => {
-    const timelineItems = document.querySelectorAll(".timeline-item");
-
-    // Simple animation on scroll
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    });
-
-    timelineItems.forEach(item => observer.observe(item));
-});
-
-const starsContainer = document.querySelector('.stars');
-const numberOfStars = 100; // Jumlah bintang yang ingin ditampilkan
-
-for (let i = 0; i < numberOfStars; i++) {
-    const star = document.createElement('div');
-    star.classList.add('star');
-
-    // Posisi acak
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
-
-    // Ukuran acak
-    const size = Math.random() * 3 + 1; // Ukuran antara 1px - 4px
-    star.style.width = `${size}px`;
-    star.style.height = `${size}px`;
-
-    // Menempatkan bintang
-    star.style.left = `${x}px`;
-    star.style.top = `${y}px`;
-
-    // Tambahkan ke container
-    starsContainer.appendChild(star);
-}
+ 
